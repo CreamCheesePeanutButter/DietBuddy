@@ -6,13 +6,13 @@ namespace DietBuddy
         // Properties to store dish information
         public string DishName { get; set; }
         public string Ingredients { get; set; }
-        private int Calories = CalculateCalories();
+        private double Calories { get; set; }
         // Constructor to initialize dish information
         public Dish(string dishName, string ingredients, int calories)
         {
             DishName = dishName;
             Ingredients = ingredients;
-            Calories = calories;
+            Calories = CalculateCalories();
         }
         // Method to display dish information
         private double CalculateCalories()
@@ -23,7 +23,7 @@ namespace DietBuddy
         {
             Console.WriteLine($"Dish Name: {DishName}");
             Console.WriteLine($"Ingredients: {Ingredients}");
-            Console.WriteLine($"Calories: {Calories}");
+            Console.WriteLine($"Calories: {Calories}");         
         }
     }
 }

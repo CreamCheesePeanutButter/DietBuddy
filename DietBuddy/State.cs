@@ -1,5 +1,5 @@
 ﻿using System;
-namespace DietBudy
+namespace DietBuddy
 {
     public enum State
     {
