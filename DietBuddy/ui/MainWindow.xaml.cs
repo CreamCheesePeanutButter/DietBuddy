@@ -42,9 +42,11 @@ namespace DietBuddy
             if (string.IsNullOrWhiteSpace(username.Text) || string.IsNullOrWhiteSpace(user_age.Text) || string.IsNullOrEmpty(user_weight.Text))
             {
                 MessageBox.Show("Input Error.");
+                
                 return;
             }
             user = new UserInformation(username.Text, int.Parse(user_age.Text), double.Parse(user_weight.Text));
+            UserInputGrid.Visibility = Visibility.Collapsed;
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

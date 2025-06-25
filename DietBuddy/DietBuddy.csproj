@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="res\login_background.jpg" />
+    <None Remove="src\login_background.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="res\login_background.jpg">
+    <Resource Include="src\login_background.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
