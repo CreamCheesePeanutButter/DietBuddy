@@ -46,9 +46,14 @@ namespace DietBuddy
                 return;
             }
             user = new UserInformation(username.Text, int.Parse(user_age.Text), double.Parse(user_weight.Text));
-            UserInputGrid.Visibility = Visibility.Collapsed;
+            Page.Visibility = Visibility.Collapsed;
+            ChooseDishPage.Visibility = Visibility.Visible;
         }
-
+        private void ChooseDishButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("choosing...");
+        }
+        
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
